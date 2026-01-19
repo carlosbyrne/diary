@@ -1,9 +1,9 @@
 from lib.make_snippet import make_snippet
 import pytest
 
-def test_valid_input_more_than_5():
-    foobar = "foobar"
-    desired_result = "fooba..."
+def test_valid_input_more_than_5_words():
+    foobar = "foo bar foobar bar foo foobar"
+    desired_result = "foo bar foobar bar foo..."
     assert make_snippet(foobar) == desired_result
 
 def test_valid_input_5_or_less():
